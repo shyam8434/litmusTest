@@ -1,0 +1,196 @@
+.mainContainer {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.doorContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.doorsInnerContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.door1 {
+  height: 47%;
+  width: 13%;
+  background: transparent;
+  position: absolute;
+  top: 31%;
+  left: 29%;
+  z-index: 100;
+}
+.door2 {
+  height: 47%;
+  width: 13%;
+  background: transparent;
+  position: absolute;
+  top: 31%;
+  right: 31%;
+  z-index: 100;
+}
+/* .door2:hover {
+  background: rgba(0, 0, 255, 0.329);
+  animation: ripple 1s infinite;
+} */
+.doorRipple2 {
+  height: 47%;
+  width: 13%;
+  background: transparent;
+  position: absolute;
+  top: 31%;
+  right: 31%;
+  background: rgba(0, 0, 255, 0.2);
+  animation: ripple2 1s infinite;
+}
+.doorRipple1 {
+  height: 47%;
+  width: 13%;
+  background: transparent;
+  position: absolute;
+  top: 31%;
+  left: 29%;
+  background: rgba(0, 0, 255, 0.2);
+  animation: ripple1 1s infinite;
+}
+@keyframes ripple1 {
+  0% {
+    height: 0%;
+    top: 52%;
+    width: 0%;
+    left: 36%;
+  }
+  100% {
+    height: 47%;
+    top: 31%;
+    width: 13%;
+    left: 29%;
+  }
+}
+@keyframes ripple2 {
+  0% {
+    height: 0%;
+    top: 52%;
+    width: 0%;
+    right: 37%;
+  }
+  100% {
+    height: 47%;
+    top: 31%;
+    width: 13%;
+    right: 31%;
+  }
+}
+.ripleContainer {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapRipple {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 255, 0.37);
+  animation: mapRipple 1s infinite;
+}
+@keyframes mapRipple {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+.keyContainer {
+  height: 10%;
+  width: 6%;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  background: transparent;
+  z-index: 200;
+  background-image: url("../../Assets/key.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mapContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.indiaContainer {
+  height: fit-content;
+  width: fit-content;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  color: #6ba6ff;
+}
+.indiaContainer:hover {
+  color: white;
+}
+.visaContainer {
+  height: fit-content;
+  width: fit-content;
+  font-size: 10px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: #6ba6ff;
+}
+.visaContainer:hover {
+  color: white;
+}
+.ripleContainer {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mapRipple {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 255, 0.37);
+  animation: mapRipple 1s infinite;
+}
+@keyframes mapRipple {
+  0% {
+    height: 0%;
+    width: 0%;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.accessContainer {
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    border: 2px solid black;
+    background: transparent;
+    top: 10px;
+    left: 10px;
+}
+.dataCount {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+
+}
